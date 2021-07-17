@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD-->
+<head>
+	<title> Home page </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="css/cssHome.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<!--BODY-->
+<body>
+		<div id="logo">
+			<img src="Images/logo.png" alt="LOGO">
+		</div>
+		
+		<div class = "nav" id = "mynav">
+			<ul class= "mynavg">
+				<li><a href ="home.html" class = "active"> Home </a></li>
+				<li><a href="timeline.html">TimeLine</a></li>
+				<li><a href="clothing.html">Clothing</a></li>
+				<li><a href="homeDecor.html">Home Decor</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="vintageInNZ.html">Vintage in NZ</a></li>
+				<li><a href="blogs.html">Blogs</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class = "slideShow">
+			<div class = "mySlides">
+				<div class = "numberText"> 1 / 4</div>
+				<img src = "Images/quote_one.png"  alt="image_not_found" style = "width:100%">
+			</div>
+			<div class = "mySlides">
+				<div class = "numberText"> 2 / 4</div>
+				<img src = "Images/quote_two.jpg" alt="image_not_found" style = "width:100%">
+			</div>
+			<div class = "mySlides">
+				<div class = "numberText"> 3 / 4</div>
+				<img src = "Images/quote_three.png" alt="image_not_found" style = "width:100%">
+			</div>
+			<div class = "mySlides">
+				<div class = "numberText"> 4 / 4</div>
+				<img src = "Images/quote_four.png" alt="image_not_found" style = "width:100%">
+			</div>
+			
+			<div style = "text-align: center">
+				<span class = "dot"></span>
+				<span class = "dot"></span>
+				<span class = "dot"></span>
+				<span class = "dot"></span>
+			</div>
+				
+		</div>
+		
+		<div id = "welcomediv">
+			<p>
+				"Hi, welcome to the most<br>
+				   informative website<br>
+					  on vintage."
+			</p>
+		</div>
+		
+		<div id = "videoContent">
+			<button onclick="playPause()">Play/Pause</button> 
+			<button onclick="makeBig()">Big</button>
+			<button onclick="makeSmall()">Small</button>
+			<button onclick="makeNormal()">Normal</button>
+			<br><br>
+			
+			<video id = "video" width="400" controls>
+				<source src="Images/video.mp4" type="video/mp4">
+			</video>
+		</div>
+	<script src="js/jsHome.js"></script>		
+	<br>
+	<br>
+	
+	<footer>
+		<a href ="bibliography.html"> Bibliography </a>
+	</footer>
+</body>
+</html>

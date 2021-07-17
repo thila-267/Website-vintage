@@ -1,0 +1,31 @@
+#subheading {
+	text-align: center;
+}
+
+#subheading h1{
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+
+.shop{
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+	.gridContainer{
+		display: block;
+	}
+
+}

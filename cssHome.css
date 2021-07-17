@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Adding backgroung image*/
+body, html {
+	margin: 0;
+	background-image: url("Images/background.jpg");
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+}
+
+/* Setting the logo in the center*/
+#logo img{
+	width: 300px;	
+	margin-left: auto;
+	margin-right: auto;	
+	display:block;
+}
+
+/* Having a sticky navigation bar*/
+.nav{
+	position: sticky;
+}
+
+/* Style properties for the links in navigation*/
+.nav a{
+	float: left;
+	display: block;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 40px;
+	font-size: 24px;
+}
+
+/* Change the color of links on hover*/
+.nav a:hover{
+	background-color: #909090;
+}
+
+/* To highlight current page*/
+.active {
+	background-color: #ffff33; 
+}
+
+/* Making the navigation bar reponsive*/
+@media screen and (max-width: 600px) {
+   .nav a {
+	   text-align: center;
+	   float: none;
+	   display: block;
+   }
+}
+

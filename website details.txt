@@ -1,0 +1,11 @@
+
+Username: vin.orgfree.com
+Password: website
+
+
+FTP Server/Host: vin.orgfree.com
+FTP Login/Username: vin.orgfree.com
+FTP PassWord: website
+
+Account manager:  http://vin.orgfree.com/cpanel.
+

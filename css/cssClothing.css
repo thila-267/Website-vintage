@@ -1,0 +1,135 @@
+.heading {
+	text-align: center;
+}
+
+.heading h1{
+	margin-top: 50px;
+	font-size: 40px;
+}
+
+.buttoncenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.buttons{
+	margin-right: 100px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	border: none;
+}
+
+.buttons:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.gridContainer {
+	display: grid;
+	padding: 10px;
+	margin: 100px;
+	grid-template-columns: auto auto auto;
+	grid-gap: 50px 100px;
+}
+
+.piece{
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.content {
+	background-color: #F9B256;
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	overflow: auto;
+}
+
+#info{
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.gridContainer{
+		display: block;
+		padding: 10px;
+		margin: 0px;
+		grid-template-columns: auto;
+		grid-gap: 50px 100px;
+	}
+	
+	.buttons{
+		margin-right: 50px;
+		border-radius: 50%;
+		background-color: black;
+		color: white;
+		font-size: 30px;
+		border: none;
+	}
+	
+	.buttons:hover{
+		background-color: white;
+		color: black;
+		cursor: pointer;
+	}
+	
+	.content {
+		background-color: #F9B256;
+		margin-top: 50px;
+		margin-left: 0px;
+		margin-right: 0px;
+		overflow: none;
+	}
+	
+	.piece{
+		padding: 0px;
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.gridContainer{
+		display: grid;
+		padding: 10px;
+		margin: 0px;
+		grid-template-columns: auto;
+		grid-gap: 50px 100px;
+	}
+	
+	.content {
+		background-color: #F9B256;
+		margin-top: 50px;
+		margin-left: 0px;
+		margin-right: 0px;
+		overflow: none;
+	}
+	
+	.piece{
+		padding: 0px;
+		font-size: 12px;
+		text-align: center;
+	}
+	
+	.buttoncenter {
+		display: block;
+		margin-top: 50px;
+		text-align: center;
+	}
+	
+	.buttons{
+		margin-top: 50px;
+	}
+	
+	.buttons:hover{
+		background-color: white;
+		color: black;
+		cursor: pointer;
+	}
+}

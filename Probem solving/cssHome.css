@@ -1,0 +1,175 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Adding backgroung image*/
+body, html {
+	margin: 0;
+	background-image: url("background.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	font-family: Lucida Console, Monaco, monospace;
+}
+
+/* Setting the logo in the center*/
+#logo img{
+	width: 300px;	
+	margin-left: auto;
+	margin-right: auto;	
+	display:block;
+}
+
+/* Having a sticky navigation bar*/
+.nav{
+	position: sticky;
+	text-align: center;
+}
+
+/* Style properties for the links in navigation*/
+.nav a{
+	float: left;
+	display: block;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 40px;
+	font-size: 24px;
+}
+
+/* Change the color of links on hover*/
+.nav a:hover{
+	background-color: #909090;
+}
+
+/* Add style to the main list*/
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+/* To have a horizontal navigation*/
+.nav li{
+	float:left;
+}
+
+
+/* setting the style for slideshow div*/
+.slideShow{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* setting the style for the number text in slideshow div*/
+.numberText{
+	color:  #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* setting the style for the dot part in slideshow div*/
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+    display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+/* To highlight current picture in the side show*/
+.active {
+	 background-color: #717171;
+}
+
+/* setting the text in the center using div and background color*/
+#welcomediv{
+	background-color: #F9E79F;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
+}
+/* Adding style to the paragraph text*/
+#welcomediv p {
+	font-size: 50px;
+	color: black;
+	font-weight: bolder;
+}
+
+#videoContent{
+	text-align: center;
+}
+
+#videoContent button{
+	font-size: 20px;
+}
+
+/*setting the style for footer*/
+footer{
+	font-size: 20px;
+	text-align: right;
+}
+
+footer a{
+	margin-right: 20px;
+	color: white;
+	font-weight: bolder;
+}
+
+/* Making the navigation bar reponsive*/
+
+@media screen and (max-width: 1100px) {
+	.nav li {
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	
+	body {
+		background-image: linear-gradient(90deg, #0EB4C2, #DCBA26);
+	}
+	
+	#welcomediv p {
+		font-size: 30px;
+		color: #131D89;
+		font-weight: bolder;
+	}
+	
+	#videoContent{
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	.nav li {
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	
+	body {
+		background-image: linear-gradient(90deg, #663300, #FCEAA6);
+	}
+	
+	#welcomediv p {
+		font-size: 20px;
+		color: #B63228;
+		font-weight: bolder;
+	}
+	
+	#videoContent{
+		text-align: center;
+	}
+}

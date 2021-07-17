@@ -1,0 +1,115 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Adding background color ad setting the font family*/
+body {
+	 background-image: linear-gradient(90deg, #663300, #FCEAA6);
+	 font-family: Lucida Console, Monaco, monospace;
+}
+
+/* Positioning logo in the left*/
+#logo{
+	float: left;
+	margin: 10px;
+}
+
+#logo img{
+	width: 300px;	
+}
+
+/* Adding style to the heading and positioning it beside logo*/
+#heading{
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	background-color: #F9B256;
+	padding-left: 450px;
+	padding-right: 450px;
+}
+
+#heading p{
+	color: black;
+	font-size: 45px;
+	font-weight: bolder;
+}
+
+/* Having a sticky navigation bar*/
+.nav{
+	position: sticky;
+	text-align: center;
+}
+
+/* Style properties for the links in navigation*/
+.nav a{
+	float: left;
+	display: block;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 40px;
+	font-size: 24px;
+}
+
+/* Change the color of links on hover*/
+.nav a:hover{
+	background-color: #909090;
+}
+
+/* Add style to the main list*/
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	background-color: #F7BF45;
+}
+
+/* To have a horizontal navigation*/
+.nav li{
+	float:left;
+}
+
+/*setting the style for footer*/
+footer{
+	font-size: 20px;
+	text-align: right;
+	padding: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #F7BF45;
+}
+
+footer a{
+	margin-right: 20px;
+	color: black;
+	font-weight: bolder;
+}
+
+
+/* Making the navigation bar reponsive*/
+@media screen and (max-width: 1000px) {
+		.nav li {
+			text-align: center;
+			float: none;
+			display: block;
+		}
+		
+		#heading {
+			margin-left: auto;
+			margin-right: 30px;
+			padding-left: 20px;
+			padding-right: 50px;
+		}
+		
+		#heading p {
+			text-align:center;
+		}
+}
+
+
